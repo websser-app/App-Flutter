@@ -13,8 +13,8 @@
          FlutterApplication and put your custom class here. -->
     <application
             android:name="io.flutter.app.FlutterApplication"
-            android:label="Home Services"
-            android:icon="@mipmap/ic_launcher"
+            android:label="Websser"
+            android:icon="@mipmap/launcher_icon"
             android:usesCleartextTraffic="true">
 
         <meta-data android:name="com.google.android.geo.API_KEY"
