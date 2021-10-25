@@ -32,6 +32,7 @@ class Global extends Model {
     data['mock_base_url'] = this.mockBaseUrl;
     data['laravel_base_url'] = this.laravelBaseUrl;
     data['api_path'] = this.apiPath;
+    print('AQUIIIIII' + this.laravelBaseUrl);
     return data;
   }
 }
