@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "612425102158",
+    "project_id": "odem-pro-20e22",
+    "storage_bucket": "odem-pro-20e22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612425102158:android:c4f7cb19ab475d3a2a641f",
+        "android_client_info": {
+          "package_name": "com.smartersvision.home_services"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612425102158-sna4sbtoonkla5sqck5865tjavianu7c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZW8v68nmrXQZ0mxVksFg0TOdekXHxLY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612425102158-sna4sbtoonkla5sqck5865tjavianu7c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

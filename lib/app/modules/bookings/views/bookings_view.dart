@@ -16,7 +16,8 @@ class BookingsView extends GetView<BookingsController> {
       body: RefreshIndicator(
           onRefresh: () async {
             Get.find<LaravelApiClient>().forceRefresh();
-            controller.refreshBookings(showMessage: true, statusId: controller.currentStatus.value);
+            controller.refreshBookings(
+                showMessage: true, statusId: controller.currentStatus.value);
             Get.find<LaravelApiClient>().unForceRefresh();
           },
           child: CustomScrollView(
@@ -46,12 +47,15 @@ class BookingsView extends GetView<BookingsController> {
                       ? TabBarLoadingWidget()
                       : TabBarWidget(
                           tag: 'bookings',
-                          initialSelectedId: controller.bookingStatuses.elementAt(0).id,
-                          tabs: List.generate(controller.bookingStatuses.length, (index) {
-                            var _status = controller.bookingStatuses.elementAt(index);
+                          initialSelectedId:
+                              controller.bookingStatuses.elementAt(0).id,
+                          tabs: List.generate(controller.bookingStatuses.length,
+                              (index) {
+                            var _status =
+                                controller.bookingStatuses.elementAt(index);
                             return ChipWidget(
                               tag: 'bookings',
-                              text: _status.status,
+                              text: _status.status.tr,
                               id: _status.id,
                               onSelected: (id) {
                                 controller.changeTab(id);

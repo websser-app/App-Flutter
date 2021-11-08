@@ -14,7 +14,7 @@ import 'app/services/settings_service.dart';
 import 'app/services/translation_service.dart';
 
 void initServices() async {
-  Get.log('starting services ...');
+  Get.log('starting services ...', isError: true);
   await GetStorage.init();
   await Get.putAsync(() => TranslationService().init());
   await Get.putAsync(() => GlobalService().init());
